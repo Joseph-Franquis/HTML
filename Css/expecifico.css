@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+}
+
+html{
+    background-color: #51c4d3;
+    width: 100%;
+    height: 100%;
+}
+/*Todas la letras de color*/
+a, p, span{
+    color: #d8e3e7;
+    
+}
+a{
+    text-decoration: none;
+}
+/*la primera cabecera*/
+.cabecera1 {
+    border: 2px;
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 100%;
+
+    background-color: #132c33;
+
+    width: auto;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+    z-index: 5;
+    left: 0;
+    top: 0;
+}
+
+.cabecera1 a:hover {
+    background-color: #51c4d3;
+}
+/*la segunda cabecera*/
+.cabecera2 {
+    box-shadow: 0 5px 10px #132c33;
+    border-width: 100%;
+    width: auto;
+    height: 50px;
+    z-index: 3;
+
+    top: 50px;
+}
+
+.cabecera2 ul{
+
+    list-style: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    padding: 0;
+
+    height: 80px;
+}
+
+.cabecera2 li{
+    height: 100%;
+    width: 20%;
+}
+		
+.cabecera2 li a {
+	background-color: #132c33;
+	color:#d8e3e7;
+	text-decoration:none;
+	display:block;
+	width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cabecera2 li a:hover {
+	background-color: #126e82;
+    
+}
+
+
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    height: 100%;
+    width: 100;
+}
+
+/*el contenido*/
+.contenido {
+    display: grid;
+    
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns:  25%, 75%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+}
+
+.contenido .selec {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.contenido  .titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+}
+
+.contenido .descripcion, .contenido .titulo{
+    padding-top: 25px;
+}
+
+.contenido .descripcion div *{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contenido .descripcion div p {
+    margin-top: 3mm;
+    margin-left: 2mm;
+    margin-right: 2mm;
+
+}
+.contenido .descripcion img {
+    padding: 3mm;
+    width: 150px;
+    height: 150px;
+}
+
+.contenido .descripcion div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.articulo {
+    margin-top: 4mm;
+    margin-bottom: 4mm;
+    background-color: #126e82;
+    border-radius: 4mm;
+}
+/**/
+.pie{
+    margin-top: 50px;
+    margin-bottom: 0;
+    width: auto;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    background-color: #132c33;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
